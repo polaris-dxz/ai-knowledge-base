@@ -1,0 +1,21 @@
+# Obsidian — per-device / session state (changes every open, causes merge conflicts)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/graph.json
+
+# Plugin runtime data (rebuilt automatically; keep manifests + community-plugins.json)
+.obsidian/plugins/*/data.json
+.obsidian/copilot-index-*.json
+
+# Vault trash
+.trash/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temp / backup
+*.bak
+*.tmp
+*.log
