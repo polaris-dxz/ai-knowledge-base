@@ -19,3 +19,6 @@ Thumbs.db
 *.bak
 *.tmp
 *.log
+
+# Local tooling artifacts
+.playwright-cli/
