@@ -725,3 +725,9 @@ Tool Layer
 # 一句话总结
 
 Codex Desktop 的本质不是一个 AI 编程工具，而是一个以 MCP 为核心、具备桌面自动化能力的 Agent Runtime 平台；其架构重点不在模型，而在权限控制、工具编排和安全边界设计。
+
+---
+
+## Related Projects
+
+[[Yuniverse Work Desktop Architecture]]（本项目桌面端实践，对照参考本文架构）

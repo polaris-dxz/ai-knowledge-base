@@ -35,8 +35,13 @@ AI Agent 是以大语言模型为推理核心、能够**感知环境、调用工
 ## Related Systems
 
 [[Claude Code Architecture]]
+[[Cursor]]
 
-待补充：Codex、Cursor、OpenHands 等 System 笔记。
+## Related Projects
+
+[[Yuniverse Work Desktop Architecture]]
+
+待补充：Codex、OpenHands 等 System 笔记。
 
 ## Common Misunderstandings
 
