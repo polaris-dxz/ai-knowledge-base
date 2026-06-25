@@ -22,3 +22,15 @@ Thumbs.db
 
 # Local tooling artifacts
 .playwright-cli/
+
+# Secrets and credentials — never commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+credentials.json
+service-account*.json
+*secret*.*

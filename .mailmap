@@ -1,0 +1,3 @@
+## Normalize author identities to avoid exposing corporate emails in git log.
+## See: https://git-scm.com/docs/gitmailmap
+William Du <3161377+polaris-dxz@users.noreply.github.com> duxizhi <duxizhi@sensetime.com>
