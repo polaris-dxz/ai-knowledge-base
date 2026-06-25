@@ -19,15 +19,13 @@ Multi-Agent 指由**多个 AI Agent 实例协作**完成单一复杂任务的架
 | 形态 | 特征 | 典型实现 |
 |------|------|----------|
 | **Subagent** | 主 Agent 派发子任务，子上下文隔离，结果回传 | Claude Code `Task` / Subagent |
-| **Coordinator + Worker** | 中心节点拆分与汇总，Worker 并行执行 | Claude Code Coordinator Mode |
+| **Coordinator + Worker** | 中心节点拆分与汇总，Worker 并行执行（见 [[Hub-and-Spoke Agent Topology]]） | Claude Code Coordinator Mode（见 [[Agent Execution Modes]]） |
 | **Agent Teams** | 多 Agent 协作，支持 Agent 间直接通信 | Claude Code Agent Teams（实验性） |
 | **Code Orchestration** | 用代码（`/workflows`）编排阶段，非 LLM 编排 | Claude Code workflows |
 
 ### 通信拓扑
 
-* **Hub-and-Spoke**：固定中心辐射，Worker 不直连（见 [[Hub-and-Spoke Agent Topology]]）
-* **动态拓扑**：研究导向（如 G-Designer），灵活但难预测
-* **结构化文本 Pipe**：无独立消息总线，结果回填主上下文
+详见 [[Hub-and-Spoke Agent Topology]]（生产首选固定拓扑）。研究方向包括动态拓扑（如 G-Designer），灵活但难预测。Claude Code 使用结构化文本 pipe 而非独立消息总线。
 
 ### 编排层级
 
@@ -43,7 +41,7 @@ LLM 编排   — 模型在推理中决定派发（灵活，Token 贵，难调试
 [[Hub-and-Spoke Agent Topology]]
 [[Agent Routing]]
 [[TAOR Loop]]
-[[Plan Mode]]
+[[Agent Execution Modes]]
 
 ## Related Systems
 
@@ -57,7 +55,7 @@ LLM 编排   — 模型在推理中决定派发（灵活，Token 贵，难调试
   **实际**：是同一任务下的多实例协作，有编排与汇总
 
 * **误解**：Agent 越多越强
-  **实际**：通信开销、上下文污染、调试复杂度随 Agent 数上升；生产系统优先可预测拓扑
+  **实际**：通信开销、上下文污染、调试复杂度随 Agent 数上升；生产系统优先可预测拓扑（见 [[Hub-and-Spoke Agent Topology]]）
 
 * **误解**：Multi-Agent 需要 Agent 间自然语言对话
   **实际**：Claude Code 等生产实现多用**结构化结果回传**，而非自由对话

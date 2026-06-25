@@ -13,12 +13,13 @@ Plan Mode 是 Claude Code 的一种执行模式路由：只允许只读工具（
 
 * 通过 EnterPlanModeTool / ExitPlanModeTool 触发——**模型可在推理中自主决定**进入 Plan Mode
 * 本质是**执行风险路由**：在路由层面阻断危险操作的直接触发路径
-* 与 Default Mode（标准 TAOR + 真实副作用）形成模式级切换
+* 与 Default Mode（标准 TAOR + 真实副作用）形成模式级切换（详见 [[Agent Execution Modes]]）
 
 ## Related Concepts
 
 [[Agent Routing]]
 [[TAOR Loop]]
+[[Agent Execution Modes]]
 
 ## Related Systems
 

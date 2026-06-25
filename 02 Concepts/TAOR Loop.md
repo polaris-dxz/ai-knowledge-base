@@ -18,6 +18,7 @@ TAOR（Think → Act → Observe → Repeat）是 Claude Code 运行层的核心
 ## Related Concepts
 
 [[Agent Routing]]
+[[Agent Execution Modes]]
 [[Plan Mode]]
 [[AI Agent]]
 
@@ -32,4 +33,4 @@ TAOR（Think → Act → Observe → Repeat）是 Claude Code 运行层的核心
 
 ## My Understanding
 
-TAOR 本身不是 2026 年的新 idea，但 Claude Code 展示了如何把 ReAct + Reflection 与 Plan Mode、Coordinator Mode、权限门控组合成**可长期运行的生产循环**。Reflection 的额外 API 成本是显式 trade-off。
+TAOR 本身不是 2026 年的新 idea，但 Claude Code 展示了如何把 ReAct + Reflection 与 [[Agent Execution Modes]]、权限门控组合成**可长期运行的生产循环**。Reflection 的额外 API 成本是显式 trade-off。
