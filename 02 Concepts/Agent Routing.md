@@ -15,13 +15,14 @@ Agent Routing 指 AI Agent 系统中**决定请求走向、执行模式、工具
 
 * **入口收敛**：差异在装配阶段吸收，核心逻辑只看标准化运行时
 * **循环内路由**：TAOR 每轮隐式决定继续工具调用或终止
-* **模式路由**：Default / Plan / Coordinator 切换执行语义与工具权限
+* **模式路由**：[[Agent Execution Modes]]（Default / Plan / Coordinator）切换执行语义与工具权限
 * **Prompt 路由**：按上下文特征动态激活 Prompt 碎片
 * **工具路由**：粗粒度能力感知 → 细粒度工具选择（Progressive Disclosure）
 * **反馈路由**：用户行为信号（挫败感、continue 频率）驱动策略调整
 
 ## Related Concepts
 
+[[Agent Execution Modes]]
 [[TAOR Loop]]
 [[Progressive Tool Disclosure]]
 [[Dynamic System Prompt Assembly]]

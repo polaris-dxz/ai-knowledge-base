@@ -23,6 +23,7 @@ Claude Code Coordinator Mode：
 ## Related Concepts
 
 [[Agent Routing]]
+[[Agent Execution Modes]]
 [[TAOR Loop]]
 [[Multi-Agent]]
 

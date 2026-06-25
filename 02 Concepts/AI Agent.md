@@ -18,12 +18,13 @@ AI Agent 是以大语言模型为推理核心、能够**感知环境、调用工
 * **Tool Calling**：通过函数/API/MCP 扩展 Agent 能力边界
 * **Harness**：包裹模型的运行时——权限、上下文、工具注册、会话管理（如 Claude Code、Codex CLI）
 * **Multi-Agent**：任务拆分、并行执行、Coordinator + Worker 协作
-* **Human-in-the-Loop**：Plan Mode、权限确认、审查高风险操作
+* **Human-in-the-Loop**：[[Agent Execution Modes]]（Plan Mode）、权限确认、审查高风险操作
 * **Computer Use**：通过 GUI/浏览器/终端操作计算机环境
 
 ## Related Concepts
 
 [[Agent Routing]]
+[[Agent Execution Modes]]
 [[TAOR Loop]]
 [[MCP]]
 [[Tool Calling]]

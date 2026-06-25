@@ -47,6 +47,8 @@
 
 ### 三种执行模式
 
+详见 [[Agent Execution Modes]]。
+
 - **Default**：标准 TAOR，工具有真实副作用
 - **Plan Mode**：只读工具，通过 Enter/ExitPlanMode 触发，输出计划供人审查
 - **Coordinator Mode**：Hub-and-Spoke，Coordinator + Worker（git worktree 隔离），结构化文本回传
@@ -68,6 +70,7 @@
 ## Related Concepts
 
 [[Agent Routing]]
+[[Agent Execution Modes]]
 [[TAOR Loop]]
 [[Progressive Tool Disclosure]]
 [[Dynamic System Prompt Assembly]]
