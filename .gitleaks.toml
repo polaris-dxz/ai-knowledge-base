@@ -1,0 +1,21 @@
+# Gitleaks configuration for ai-knowledge-base
+# See: https://github.com/gitleaks/gitleaks
+
+title = "ai-knowledge-base gitleaks config"
+
+[allowlist]
+  # Paths that are safe to ignore (templates use placeholders, not real secrets)
+  paths = [
+    '''99 Templates/.*''',
+  ]
+
+  # Known false-positive patterns in this repo
+  regexTarget = "line"
+  regexes = [
+    '''<API_KEY>''',
+    '''<ACCESS_TOKEN>''',
+    '''<PRIVATE_REPO>''',
+    '''<INTERNAL_API>''',
+    '''task-storage''',
+    '''task-message-storage''',
+  ]
